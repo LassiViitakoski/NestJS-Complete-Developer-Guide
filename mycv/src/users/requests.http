@@ -1,0 +1,35 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "laikki@gmail.com",
+  "password": "keijoksi"
+}
+
+### Sign in user
+
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "laikki@gmail.com",
+  "password": "keioksi"
+}
+
+### Find a particular user with a given ID
+GET http://localhost:3000/auth/6
+
+### Find all users with a given email
+GET http://localhost:3000/auth?email=lai@gmail.com
+
+### Delete a user with given id
+DELETE http://localhost:3000/auth/1
+
+### Update a user
+PATCH http://localhost:3000/auth/5
+Content-Type: application/json
+
+{
+  "password": "dgjsgjkshg"
+}
