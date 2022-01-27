@@ -1,5 +1,5 @@
 ### Create a new user
-POST http://localhost:3000/auth/signup
+POST https://immense-thicket-72210.herokuapp.com/auth/signup
 Content-Type: application/json
 
 {
